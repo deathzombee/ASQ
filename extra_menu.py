@@ -7,17 +7,21 @@ class ExtraMenu(MenuBase):
 
     def show_options(self):
         print("[0] BACK TO MAIN MENU")
-        print("[1] OPTION 1 - FIXME")
-        print("[2] OPTION 2 - FIXME")
+        print("[1] Birthday's Satellite")
+        print("[2] Visualization")
+        print("[3] Save/Restore")
 
     def execute_option(self, option):
         if option == '0':
             print("Returning to main menu.")
             return 'back'  # Indicate back navigation
         elif option == '1':
-            print("Option 1 functionality coming soon.")
+            print("Birthday's Satellite functionality coming soon.")
             return True
         elif option == '2':
-            print("Option 2 functionality coming soon.")
+            print("Visualization functionality coming soon.")
+            return True
+        elif option =='3':
+            print("Save or Restore functionality coming soon")
             return True
         return False

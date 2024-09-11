@@ -7,16 +7,20 @@ class MainMenu(MenuBase):
         super().__init__("THE ASQ MENU (ALL SATELLITE QUESTIONS)")
 
     def show_options(self):
-        print("[1] Option 1")
-        print("[2] Option 2")
+        print("[0] Search Record")
+        print("[1] Add Record")
+        print("[2] Delete Record")
         print("[3] Go to Extra Menu")
 
     def execute_option(self, option):
-        if option == '1':
-            print("Option 1 selected")
+        if option == '0':
+            print("Search Record selected")
+            return True
+        elif option == '1':
+            print("Add Record selected")
             return True
         elif option == '2':
-            print("Option 2 selected")
+            print("Delete Record selected")
             return True
         elif option == '3':
             extra_menu = ExtraMenu()
